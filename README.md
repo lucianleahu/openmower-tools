@@ -11,10 +11,10 @@ A map with M mowing areas and N navigation areas will be split into:
   - The existing N navigation area + the other (M-X) mowing areas transformed as navigation areas
      - the idea of transforming the other mowing areas into navigation areas is because the mower does not start if it's outside of them, so it's useful to fill the space with navigation areas.
 
-Workflow:
+### Workflow:
 - backup a map as a JSON file (e.g. map.json)
 - run "python split_map_areas.py map.json"
-- the result is a number of files (the number of mowing areas) each with name "split_area<X>_from_map.json", where <X> is the index from 0 to the number of mowing areas 
+- the result is a number of files (the number of mowing areas) each with name "split_area**X**_from_map.json", where **X** is the index from 0 to the number of mowing areas 
   - the location of the output files is the same as the input files
 - if you want to mow directly area X, Restore the file "split_areaX_from_map.json"
 - do not forget to press "Save Map"
