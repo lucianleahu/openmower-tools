@@ -1,4 +1,5 @@
-Split a map
+# Tools for OpenMower
+## Split a map
 
 To be used with Openmower GUI using backup and restore functionality.
 
@@ -18,9 +19,11 @@ Workflow:
 - if you want to mow directly area X, Restore the file "split_areaX_from_map.json"
 - do not forget to press "Save Map"
 
-e.g.
+### Example of usage:
 
-leahu@4RVWZY2 openmower % python3 split_map_areas.py maps/area0_1_2_3_4_5_6_edit8.json
+```
+> python3 split_map_areas.py maps/area0_1_2_3_4_5_6_edit8.json
+
 Input map file:  maps/area0_1_2_3_4_5_6_edit8.json
 Creating map for area 0
  Output file: maps/split_area0_from_area0_1_2_3_4_5_6_edit8.json
@@ -42,5 +45,19 @@ Creating map for area 5
 
 Creating map for area 6
  Output file: maps/split_area6_from_area0_1_2_3_4_5_6_edit8.json
+```
+**Before:**
+
+<img width="619" alt="image" src="https://github.com/lucianleahu/openmower-tools/assets/16760872/c07b933e-d387-4c4c-a117-b784c4aeaa06">
+
+**After:**
+
+- area 0:
+  <img width="601" alt="image" src="https://github.com/lucianleahu/openmower-tools/assets/16760872/c230ffd2-3ff6-4dbb-9f90-d5e138fe6232">
+
+- area 4:
+  <img width="604" alt="image" src="https://github.com/lucianleahu/openmower-tools/assets/16760872/c6f07c25-3576-40f3-afac-9fa5443b1f4b">
+
+
 
 
