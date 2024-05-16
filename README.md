@@ -1,4 +1,4 @@
-1. Split a map
+Split a map
 
 To be used with Openmower GUI using backup and restore functionality.
 
